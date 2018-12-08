@@ -35,17 +35,11 @@ function serve() {
     port: 8080,
   });
   watch([
-    './scss/*.sass',
-    './scss/blocks/*.sass',
-<<<<<<< HEAD
-  ], { delay: 800 }, styles);
+    './scss/*.scss',
+    './scss/blocks/*.scss',
+  ], { delay: 100 }, styles);
   watch('./*.html').on('change', browserSync.reload);
-  watch('/js/**/*.js').on('change', browserSync.reload);
-=======
-  ], { delay: 200 }, styles);
-  watch('./*.html').on('change', browserSync.reload);
-  watch('./**/js/*.js').on('change', browserSync.reload);
->>>>>>> 9ffc82929843430634da169148d4b80786f6ed91
+  watch('./js/*.js').on('change', browserSync.reload);
 }
 
 exports.default = series(clean, styles, serve);
