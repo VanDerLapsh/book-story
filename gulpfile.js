@@ -37,7 +37,7 @@ function serve() {
   watch([
     './scss/*.sass',
     './scss/blocks/*.sass',
-  ], { delay: 800 }, styles);
+  ], { delay: 200 }, styles);
   watch('./*.html').on('change', browserSync.reload);
   watch('./**/js/*.js').on('change', browserSync.reload);
 }
