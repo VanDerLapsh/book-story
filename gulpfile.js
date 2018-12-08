@@ -35,11 +35,11 @@ function serve() {
     port: 8080,
   });
   watch([
-    './scss/*.scss',
-    './scss/blocks/*.scss',
-  ], { delay: 100 }, styles);
+    './scss/*.sass',
+    './scss/blocks/*.sass',
+  ], { delay: 800 }, styles);
   watch('./*.html').on('change', browserSync.reload);
-  watch('./js/*.js').on('change', browserSync.reload);
+  watch('./**/js/*.js').on('change', browserSync.reload);
 }
 
 exports.default = series(clean, styles, serve);
