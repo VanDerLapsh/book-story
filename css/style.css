@@ -324,7 +324,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff; }
+  background-color: #FFFFFF; }
   .page-header__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -340,6 +340,12 @@ template {
     height: 100%;
     cursor: pointer; }
 
+.work-time {
+  display: none; }
+  @media (min-width: 768px) {
+    .work-time {
+      display: block; } }
+
 .main-nav__burger {
   cursor: pointer; }
 
@@ -349,36 +355,43 @@ template {
 .main-nav__list {
   display: none; }
 
+.book-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%; }
+  .book-card__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .book-card__title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .book-card__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .book-card__descr {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .book-card__price {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+
 .promo {
   background-color: #F2F2F2; }
   .promo__inner {
     width: 83%;
-    margin: 0 auto;
-    border: 8px solid #e8e8e8; }
-
-.slider__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.slider__item-title {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2; }
-
-.slider__item-descr {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1; }
-
-.slider__item-more {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3; }
+    margin: 0 auto; }
 
 .catalog {
   display: -webkit-box;
@@ -399,6 +412,8 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .catalog__tab-link--active {
+    border-bottom: 3px solid #ef529f; }
   .catalog__list-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -408,6 +423,22 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 83%; }
+  .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media (min-width: 480px) {
+      .catalog__list {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
   .catalog__number {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -416,7 +447,12 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-.book-card__link {
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.slider__descr-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,24 +461,26 @@ template {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.book-card__title {
+.slider__item-title {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
-          order: 2; }
+          order: 2;
+  border: 8px solid #e8e8e8; }
 
-.book-card__img {
+.slider__item-descr {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1; }
 
-.book-card__descr {
+.slider__item-more {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3; }
 
-.book-card__price {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4; }
+.slider__item-img {
+  display: none; }
+  @media (min-width: 1200px) {
+    .slider__item-img {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */

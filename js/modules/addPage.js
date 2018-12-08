@@ -6,7 +6,7 @@ function addPage(data, template) {
   const catalog = document.querySelector(bookCardTemplate.wrap);
   
   data.forEach(book => {
-    const card = createElement(book, template);
+    const card = createElement(book, bookCardTemplate);
 
     catalog.appendChild(card);
   })

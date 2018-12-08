@@ -2,6 +2,7 @@
   display: flex
   flex-direction: column
   align-items: center
+  
   &__title
     display: none
 
@@ -11,33 +12,27 @@
   &__tabs
     display: flex
 
+  &__tab-link
+
+  &__tab-link--active
+    border-bottom: 3px solid $second-color-light
+
   &__list-wrap
     display: flex
     flex-direction: column
     width: 83%
-    // margin: 0 aut
+
+  &__list
+    display: flex
+    flex-direction: column
+
+    @media (min-width: $screen-s)
+      flex-direction: row
+      flex-wrap: wrap
 
   &__number
     display: flex
     justify-content: space-between
 
-
-.book-card
-
-  &__link
-    display: flex
-    flex-direction: column
-
-  &__title
-    order: 2
-
-  &__img
-    order: 1
-
-  &__descr
-    order: 3
-
-  &__price
-    order: 4
 
 
