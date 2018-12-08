@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 
 function styles() {
-  return src('./scss/style.scss')
+  return src('./scss/style.sass')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -35,11 +35,11 @@ function serve() {
     port: 8080,
   });
   watch([
-    './scss/*.scss',
-    './scss/blocks/*.scss',
-  ], { delay: 100 }, styles);
+    './scss/*.sass',
+    './scss/blocks/*.sass',
+  ], { delay: 200 }, styles);
   watch('./*.html').on('change', browserSync.reload);
-  watch('./js/*.js').on('change', browserSync.reload);
+  watch('./**/js/*.js').on('change', browserSync.reload);
 }
 
 exports.default = series(clean, styles, serve);

@@ -1,0 +1,38 @@
+.catalog
+  display: flex
+  flex-direction: column
+  align-items: center
+  
+  &__title
+    display: none
+
+  &__tabs-wrap
+    background-color: $gray-light
+
+  &__tabs
+    display: flex
+
+  &__tab-link
+
+  &__tab-link--active
+    border-bottom: 3px solid $second-color-light
+
+  &__list-wrap
+    display: flex
+    flex-direction: column
+    width: 83%
+
+  &__list
+    display: flex
+    flex-direction: column
+
+    @media (min-width: $screen-s)
+      flex-direction: row
+      flex-wrap: wrap
+
+  &__number
+    display: flex
+    justify-content: space-between
+
+
+

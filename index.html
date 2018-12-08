@@ -8,13 +8,27 @@
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
 </head>
-<body>
+<body class="content">
 
   <header class="page-header">
     <div class="page-header__inner">
       <a href="#" class="logo"><img src="img/logo.jpg" alt="book store"></a>
+      <span class="work-time">с 9:00 до 19:00</span>
+      <svg class="page-header__basket"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="0.706cm" height="0.741cm">
+<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+ d="M17.077,12.588 C17.077,13.367 15.692,14.000 14.884,14.000 L6.461,14.000 C5.654,14.000 5.000,13.367 5.000,12.588 L3.000,5.411 C3.000,5.178 3.072,4.968 3.175,4.775 L2.432,1.999 L-0.000,1.999 L-0.000,-0.001 L4.000,-0.001 L4.000,0.124 L5.038,3.999 L18.538,3.999 C19.345,3.999 20.000,4.631 20.000,5.411 L17.077,12.588 ZM7.500,15.999 C8.881,15.999 10.000,17.119 10.000,18.499 C10.000,19.880 8.881,20.999 7.500,20.999 C6.119,20.999 5.000,19.880 5.000,18.499 C5.000,17.119 6.119,15.999 7.500,15.999 ZM14.500,15.999 C15.880,15.999 17.000,17.119 17.000,18.499 C17.000,19.880 15.880,20.999 14.500,20.999 C13.119,20.999 12.000,19.880 12.000,18.499 C12.000,17.119 13.119,15.999 14.500,15.999 Z"/>
+</svg>
       <nav class="main-nav">
-
+        <svg class="main-nav__burger"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="20px" height="14px">
+<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+ d="M19.000,8.000 L1.000,8.000 C0.448,8.000 -0.000,7.552 -0.000,7.000 C-0.000,6.448 0.448,6.000 1.000,6.000 L19.000,6.000 C19.552,6.000 20.000,6.448 20.000,7.000 C20.000,7.552 19.552,8.000 19.000,8.000 ZM19.000,2.000 L1.000,2.000 C0.448,2.000 -0.000,1.552 -0.000,1.000 C-0.000,0.448 0.448,-0.000 1.000,-0.000 L19.000,-0.000 C19.552,-0.000 20.000,0.448 20.000,1.000 C20.000,1.552 19.552,2.000 19.000,2.000 ZM1.000,12.000 L19.000,12.000 C19.552,12.000 20.000,12.447 20.000,13.000 C20.000,13.552 19.552,14.000 19.000,14.000 L1.000,14.000 C0.448,14.000 -0.000,13.552 -0.000,13.000 C-0.000,12.447 0.448,12.000 1.000,12.000 Z"/>
+</svg>
         <button class="main-nav__toggle">Главное меню</button>
         <ul class="main-nav__list">
           <li class="main_nav__item">
@@ -28,7 +42,6 @@
           </li>
         </ul>
       </nav>
-
     </div>
   </header>
 
@@ -37,11 +50,13 @@
       <div class="slider">
         <div class="slider__inner">
           <article class="slider__item">
-            <h2 class="slider__item-title">Для поклонников сериала «Симпсоны» 
-и для всех, кому интересна математика.</h2>
-            <p class="slider__item-descr">Новое поступление книги «Симпсоны 
-и их математические секреты»</p>
-            <a href="#"><img src="" alt="" class="slider__item-img"></a>
+            <div class="slider__descr-wrap">
+              <h2 class="slider__item-title">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</h2>
+              <p class="slider__item-descr">Новое поступление книги «Симпсоны 
+  и их математические секреты»</p>
+              <a href="#" class="slider__item-more">Хочу узнать о книге больше</a>
+            </div>
+            <a href="#"><img src="img/simpsony-i-ikh-matematicheskie-sekrety.png" alt="" class="slider__item-img"></a>
           </article>
         </div>
       </div>
@@ -51,59 +66,32 @@
   <section class="catalog">
     <h1 class="catalog__title">Каталог</h1>
     <div class="catalog__tabs-wrap">
-      <ul class="catalog__tabs">
+      <ul class="catalog__tabs j-tabs">
         <li class="catalog__tab-item">
-          <a href="#" class="catalog__tab-link">Все</a>
+          <a href="#" data-type="all" class="catalog__tab-link catalog__tab-link--active">Все</a>
         </li>
         <li class="catalog__tab-item">
-          <a href="#" class="catalog__tab-link">Маркетинг</a>
+          <a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
         </li>
         <li class="catalog__tab-item">
-          <a href="#" class="catalog__tab-link">Научпоп</a>
+          <a href="#" data-type="science" class="catalog__tab-link">Научпоп</a>
         </li>
         <li class="catalog__tab-item">
-          <a href="#" class="catalog__tab-link">Бизнес</a>
+          <a href="#" data-type="business" class="catalog__tab-link">Бизнес</a>
         </li>
         <li class="catalog__tab-item">
-          <a href="#" class="catalog__tab-link">Творчество</a>
+          <a href="#" data-type="creativity " class="catalog__tab-link">Творчество</a>
         </li>
-        
-        <!-- <li class="catalog__tab-item">
-          <a href="#" class="catalog__tab-link">Бизнес</a>
-        </li> -->
-
       </ul>
     </div>
 
     <div class="catalog__list-wrap">
-      <div class="catalog__list j-member-cards">
-<!--         <article class="product-card-mini">
-          <h2 class="product-card-mini__title">Латеральная логика</h2>
-          <a href="#" class="product-card-mini__img-wrap"><img src="img/book-s1.jpg" alt="picture" class="product-card-mini__img"></a>
-          <p class="product-card-mini__discr">Головоломный путь к нестандартному мышлению</p>
-          <div class="product-card-mini__price">999 P</div>
-        </article>
-
-        <article class="product-card-mini">
-          <h2 class="product-card-mini__title">Латеральная логика</h2>
-          <a href="#" class="product-card-mini__img-wrap"><img src="img/book-s1.jpg" alt="picture" class="product-card-mini__img"></a>
-          <p class="product-card-mini__discr">Головоломный путь к нестандартному мышлению</p>
-          <div class="product-card-mini__price">999 P</div>
-        </article>
-
-        <article class="product-card-mini">
-          <h2 class="product-card-mini__title">Латеральная логика</h2>
-          <a href="#" class="product-card-mini__img-wrap"><img src="img/book-s1.jpg" alt="picture" class="product-card-mini__img"></a>
-          <p class="product-card-mini__discr">Головоломный путь к нестандартному мышлению</p>
-          <div class="product-card-mini__price">999 P</div>
-        </article>
-
-        <article class="product-card-mini">
-          <h2 class="product-card-mini__title">Латеральная логика</h2>
-          <a href="#" class="product-card-mini__img-wrap"><img src="img/book-s1.jpg" alt="picture" class="product-card-mini__img"></a>
-          <p class="product-card-mini__discr">Головоломный путь к нестандартному мышлению</p>
-          <div class="product-card-mini__price">999 P</div>
-        </article> -->
+      <div class="catalog__list j-book-cards">
+<!--     `<a href="${book.Link}" class="book-card__link">
+          <h2 class="book-card__title">${book.name}</h2>
+          <img class="book-card__img" src="img/${book.img}" alt="picture">
+          <p class="book-card__descr">${book.descr}</p>
+          <div class="book-card__price">${book.price} Р</div></a>`-->
       </div>
       
       <ul class="catalog__number">
@@ -112,7 +100,10 @@
         <li class="catalog__number-list"><button class="catalog__number-btn">3</button></li>
         <li class="catalog__number-list"><button class="catalog__number-btn">4</button></li>
         <li class="catalog__number-list"><button class="catalog__number-btn">5</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">...</button></li>
+        <li class="catalog__number-list"><button class="catalog__number-btn">6</button></li>
+        <li class="catalog__number-list"><button class="catalog__number-btn">7</button></li>
+        <li class="catalog__number-list"><button class="catalog__number-btn">8</button></li>
+        <li class="catalog__number-list"><button class="catalog__number-btn">9</button></li>
         <li class="catalog__number-list"><button class="catalog__number-btn">10</button></li>
       </ul>
     </div>
@@ -121,7 +112,7 @@
   <section class="delivery">
     <div class="delivery__inner">
       <h2 class="delivery__title">Доставим в любое место</h2>
-      <p class="delivery__title-text">// ну почти в любое</p>
+      <p class="delivery__text">// ну почти в любое</p>
       <ul class="delivery__list">
         <li class="delivery__item">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</li>
         <li class="delivery__item">Мы подарим вам «Набор читателя» и добавим в посылку.</li>
