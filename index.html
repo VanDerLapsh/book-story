@@ -2,6 +2,7 @@
 <html lang="ru" class="no-js  page">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Документ</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script>
@@ -58,8 +59,9 @@
 
   <div class="promo">
     <div class="promo__inner">
-      <div class="slider">
-        <div class="slider__inner">
+      <div class="promo__slider">
+        <div class="slide book-card-big"></div>
+        <div class="slider__inner j-slider">
           <article class="slider__item">
             <div class="slider__descr-wrap">
               <h2 class="slider__item-title">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</h2>
@@ -96,6 +98,33 @@
       </ul>
     </div>
 
+
+  <section class="catalog">
+    <div class="catalog__inner">
+      <h1 class="catalog__title">Каталог</h1>
+      <div class="tabs">
+        <ul class="tabs__inner">
+          <li class="tabs__item">
+            <a href="#" class="tabs__link"></a>
+            <a href="#" class="tabs__link"></a>
+            <a href="#" class="tabs__link"></a>
+            <a href="#" class="tabs__link"></a>
+          </li>
+        </ul>
+        <div class="catalog__content">
+          <div class="catalog__inner">
+            <div class="catalog__cards j-book-cards">
+              
+            </div>
+            <div class="catalog__pagination">
+              
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <div class="catalog__list-wrap">
       <div class="catalog__list j-book-cards">
 <!--     `<a href="${book.Link}" class="book-card__link">
@@ -105,7 +134,7 @@
           <div class="book-card__price">${book.price} Р</div></a>`-->
       </div>
       
-      <ul class="catalog__number">
+      <ul class="catalog__pagination number">
         <li class="catalog__number-list"><button class="catalog__number-btn">1</button></li>
         <li class="catalog__number-list"><button class="catalog__number-btn">2</button></li>
         <li class="catalog__number-list"><button class="catalog__number-btn">3</button></li>
