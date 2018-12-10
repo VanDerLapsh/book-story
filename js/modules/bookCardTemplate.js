@@ -1,5 +1,5 @@
 const bookCardTemplate = {
-  wrap: '.j-book-cards',
+  wrap: '.j-tabs',
   tag: 'div',
   tagClass: 'book-card',
   setContent: function(book) {

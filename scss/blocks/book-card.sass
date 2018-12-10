@@ -1,6 +1,9 @@
 .book-card
   display: flex
-  width: 25%
+  width: 220px
+
+  @media (min-width: $screen-m)
+    width: 260px
 
   &__link
     display: flex
@@ -12,12 +15,12 @@
 
   &__img
     order: 1
-    height: 315px;
-    width: 220px;
+    height: 315px
+    width: 220px
 
     @media (min-width: $screen-m)
-      height: 370px;
-      width: 260px;
+      height: 370px
+      width: 260px
 
   &__descr
     order: 3

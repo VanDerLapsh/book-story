@@ -2,6 +2,7 @@ import addPage from './modules/addPage.js';
 import booksData from './modules/bookData.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
+// import slider from './modules/slider.js';
 
 
 
@@ -18,6 +19,9 @@ import sendRequest from './modules/sendRequest.js';
   
 // });
 
+// Подключение слайдера
+
+$('.j-slider').slick();
 
 
 // объекты для Ajax запроса
