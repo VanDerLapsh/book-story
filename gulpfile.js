@@ -111,11 +111,6 @@ function serve() {
   ));
 }
 
-exports.build = series(
-  clean,
-  parallel(styles,copyHTML,copyIMG,copyFonts,javascript)
-);
-
 
 exports.default = series(
   clean,
