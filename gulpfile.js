@@ -5,7 +5,7 @@ const dir = {
   build: './build/'
 };
 
-const { series, parallel, src, dest, watch } = require('gulp');
+const {series, parallel, src, dest, watch} = require('gulp');
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
@@ -40,13 +40,14 @@ function copyHTML (){
 
 exports.copyHTML = copyHTML;
 
-function copyIMG (){
-  return src(`${dir.src}**/*.{jpg,jpeg,gif,png,webp}`)
+function copyImg (){
+  return src(`${dir.src}/img/**/*.{jpg,jpeg,gif,png,webp}`)
+  // return src(`${dir.src}**/*.{jpg,jpeg,gif,png,webp}`)
     .pipe(plumber())
     .pipe(dest(`${dir.build}img/`));
 }
 
-exports.copyIMG = copyIMG;
+exports.copyImg = copyImg;
 
 function copyFonts (){
   return src(`${dir.src}fonts/*.{woff2,woff,otf,ttf}`)
@@ -101,24 +102,20 @@ function serve() {
     port: 8080,
   });
   watch(`${dir.src}scss/**/*.sass`, { delay: 500 }, styles);
-  watch(`${dir.src}*.html').on('change`, series (
+  watch(`${dir.src}*.html`).on('change', series (
     copyHTML,
     browserSync.reload
   ));
-  watch(`${dir.src}js/**/*.js')on('change`, series (
+  watch(`${dir.src}js/**/*.js`).on('change', series (
     javascript,
     browserSync.reload
   ));
 }
 
-exports.build = series(
-  clean,
-  parallel(styles,copyHTML,copyIMG,copyFonts,javascript)
-);
 
 
 exports.default = series(
   clean,
-  parallel(styles,copyHTML,copyIMG,copyFonts,javascript),
+  parallel(styles, copyHTML, copyImg, copyFonts, javascript),
   serve
 );
