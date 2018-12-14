@@ -15,29 +15,16 @@ import sendRequest from './modules/sendRequest.js';
 // });
  // Подключение слайдера
  // $('.j-slider').slick();
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 41c51438cf48a4583784dc2f5e4ddaf5ef3d7006
  // объекты для Ajax запроса
-
 const data = {
-
   page: 1,
   perPage: 8,
   type: ''
 };
-
  const wrap = document.querySelector(bookCardTemplate.wrap);
-
  if (wrap) {
-
   const dataAjax = createDataAjax();
-
    sendRequest(dataAjax, function(responseObj){
-
     if (wrap.children) {
       wrap.innerHTML = '';
   }

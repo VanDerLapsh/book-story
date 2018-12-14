@@ -5,7 +5,7 @@ const dir = {
   build: './build/'
 };
 
-const {series, parallel, src, dest, watch} = require('gulp');
+const { series, parallel, src, dest, watch } = require('gulp');
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
@@ -40,19 +40,13 @@ function copyHTML (){
 
 exports.copyHTML = copyHTML;
 
-<<<<<<< HEAD
-function copyImg (){
-  return src(`${dir.src}/img/**/*.{jpg,jpeg,gif,png,webp}`)
-  // return src(`${dir.src}**/*.{jpg,jpeg,gif,png,webp}`)
-=======
 function copyIMG (){
   return src(`${dir.src}/img/**/*.{jpg,jpeg,gif,png,webp}`)
->>>>>>> 41c51438cf48a4583784dc2f5e4ddaf5ef3d7006
     .pipe(plumber())
     .pipe(dest(`${dir.build}img/`));
 }
 
-exports.copyImg = copyImg;
+exports.copyIMG = copyIMG;
 
 function copyFonts (){
   return src(`${dir.src}fonts/*.{woff2,woff,otf,ttf}`)
@@ -117,13 +111,9 @@ function serve() {
   ));
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 41c51438cf48a4583784dc2f5e4ddaf5ef3d7006
 
 exports.default = series(
   clean,
-  parallel(styles, copyHTML, copyImg, copyFonts, javascript),
+  parallel(styles,copyHTML,copyIMG,copyFonts,javascript),
   serve
 );
