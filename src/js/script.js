@@ -15,9 +15,12 @@ import sendRequest from './modules/sendRequest.js';
 // });
  // Подключение слайдера
  // $('.j-slider').slick();
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 41c51438cf48a4583784dc2f5e4ddaf5ef3d7006
  // объекты для Ajax запроса
 
 const data = {

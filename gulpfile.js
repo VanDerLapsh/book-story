@@ -40,9 +40,14 @@ function copyHTML (){
 
 exports.copyHTML = copyHTML;
 
+<<<<<<< HEAD
 function copyImg (){
   return src(`${dir.src}/img/**/*.{jpg,jpeg,gif,png,webp}`)
   // return src(`${dir.src}**/*.{jpg,jpeg,gif,png,webp}`)
+=======
+function copyIMG (){
+  return src(`${dir.src}/img/**/*.{jpg,jpeg,gif,png,webp}`)
+>>>>>>> 41c51438cf48a4583784dc2f5e4ddaf5ef3d7006
     .pipe(plumber())
     .pipe(dest(`${dir.build}img/`));
 }
@@ -112,7 +117,10 @@ function serve() {
   ));
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41c51438cf48a4583784dc2f5e4ddaf5ef3d7006
 
 exports.default = series(
   clean,
