@@ -41,7 +41,7 @@ function copyHTML (){
 exports.copyHTML = copyHTML;
 
 function copyIMG (){
-  return src(`${dir.src}**/*.{jpg,jpeg,gif,png,webp}`)
+  return src(`${dir.src}/img/**/*.{jpg,jpeg,gif,png,webp}`)
     .pipe(plumber())
     .pipe(dest(`${dir.build}img/`));
 }
@@ -101,11 +101,11 @@ function serve() {
     port: 8080,
   });
   watch(`${dir.src}scss/**/*.sass`, { delay: 500 }, styles);
-  watch(`${dir.src}*.html').on('change`, series (
+  watch(`${dir.src}*.html`).on('change', series (
     copyHTML,
     browserSync.reload
   ));
-  watch(`${dir.src}js/**/*.js')on('change`, series (
+  watch(`${dir.src}js/**/*.js`).on('change', series (
     javascript,
     browserSync.reload
   ));
