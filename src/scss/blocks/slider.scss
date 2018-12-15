@@ -1,31 +1,36 @@
 .slider {
 
-  &_big-crad {
-
-  }
-
   &__item {
     display: flex;
     // flex-direction: column
   }
+
+  &__descr-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-title {
+    order: 2;
+    border: 8px solid $gray-dark;
+    padding: 30px 10px;
+  }
+
+  &__item-descr {
+    order: 1;
+  }
+
+  &__item-more {
+    order: 3;
+    border: 8px solid $gray-dark;
+    padding: 30px 10px;
+  }
+
+  &__item-img {
+    display: none;
+
+    @media (min-width: $screen-l) {
+      display: block;
+    }
+  }
 }
-// &__descr-wrap
-//   display: flex
-//   flex-direction: column
-
-// &__item-title
-//   order: 2
-//   border: 8px solid $gray-dark
-
-// &__item-descr
-//   order: 1
-
-// &__item-more
-//   order: 3
-
-// &__item-img
-//   display: none
-
-//   @media (min-width: $screen-l)
-//     display: block
-

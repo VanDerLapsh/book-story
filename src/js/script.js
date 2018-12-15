@@ -1,8 +1,10 @@
+// import $ from './modules/jquery.js';
+// import slick from './modules/slick.js';
 import addPage from './modules/addPage.js';
 import booksData from './modules/bookData.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
-// import slider from './modules/slider.js';
+
  // function ready(fn) {
 //   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
 //     fn();
@@ -13,16 +15,23 @@ import sendRequest from './modules/sendRequest.js';
  // ready(function(){
    
 // });
- // Подключение слайдера
- // $('.j-slider').slick();
- // объекты для Ajax запроса
+// Подключение слайдера
+
+
+// $(document).ready(function(){
+//       $('.your-class').slick();
+//     });
+
+
+// объекты для Ajax запроса
 const data = {
   page: 1,
   perPage: 8,
   type: ''
 };
- const wrap = document.querySelector(bookCardTemplate.wrap);
- if (wrap) {
+ 
+const wrap = document.querySelector(bookCardTemplate.wrap);
+  if (wrap) {
   const dataAjax = createDataAjax();
    sendRequest(dataAjax, function(responseObj){
     if (wrap.children) {
@@ -68,3 +77,4 @@ function createDataAjax() {
   }
   return `https://api.do-epixx.ru/htmlpro/bookstore/books/get/${data.page}/${data.perPage}/${data.type}`;
 }; 
+
