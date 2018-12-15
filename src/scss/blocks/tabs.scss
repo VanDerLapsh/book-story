@@ -1,0 +1,15 @@
+.tabs {
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background-color: $gray-light;
+  }
+
+  &__link--active {
+    border-bottom: 3px solid $second-color-light;
+  }
+}

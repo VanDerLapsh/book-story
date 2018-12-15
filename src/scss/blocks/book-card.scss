@@ -1,0 +1,37 @@
+.book-card {
+  display: flex;
+  width: 220px;
+
+  @media (min-width: $screen-m) {
+    width: 260px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  &__title {
+    order: 2;
+  }
+
+  &__img {
+    order: 1;
+    height: 315px;
+    width: 220px;
+  }
+
+  @media (min-width: $screen-m) {
+    height: 370px;
+    width: 260px;
+  }
+
+  &__descr {
+    order: 3;
+  }
+
+  &__price {
+    order: 4;
+  }
+}

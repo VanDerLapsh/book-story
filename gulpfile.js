@@ -21,7 +21,7 @@ const ghpages = require('gh-pages');
 const path = require('path');
 
 function styles() {
-  return src(`${dir.src}scss/style.sass`)
+  return src(`${dir.src}scss/style.scss`)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -108,7 +108,7 @@ function serve() {
     open: false,
     port: 8080,
   });
-  watch(`${dir.src}scss/**/*.sass`, { delay: 500 }, styles);
+  watch(`${dir.src}scss/**/*.scss`, { delay: 500 }, styles);
   watch(`${dir.src}*.html`).on('change', series (
     copyHTML,
     browserSync.reload
