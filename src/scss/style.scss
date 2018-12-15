@@ -1,8 +1,8 @@
 @import 'blocks/vanderlapsh_reset';
 @import 'variables';
-
-@import 'blocks/slick.scss';
-@import 'blocks/slick-theme.scss';
+@import '../../node_modules/normalize.scss/normalize.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import 'blocks/page';
 @import 'blocks/page-header';
 @import 'blocks/logo';

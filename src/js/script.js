@@ -1,5 +1,5 @@
-// import $ from './modules/jquery.js';
-// import slick from './modules/slick.js';
+import $ from '../../node_modules/jquery/dist/jquery.js';
+import slick from '../../node_modules/slick-carousel/slick/slick.js';
 import addPage from './modules/addPage.js';
 import booksData from './modules/bookData.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
@@ -18,9 +18,7 @@ import sendRequest from './modules/sendRequest.js';
 // Подключение слайдера
 
 
-// $(document).ready(function(){
-//       $('.your-class').slick();
-//     });
+  $('.j-slick').slick();
 
 
 // объекты для Ajax запроса
