@@ -7,20 +7,6 @@ li {
 a {
   text-decoration: none; }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf"), "../fonts/Montserrat-Regular.otf";
-  font-style: normal; }
-
-@font-face {
-  font-family: "Montserrat-italic";
-  src: url("../fonts/Montserrat-Italic.ttf"), "../fonts/Montserrat-Italic.otf";
-  font-style: italic; }
-
-@font-face {
-  font-family: "Montserrat-bold";
-  src: url("../fonts/Montserrat-Bold.ttf"), "../fonts/Montserrat-Bold.otf"; }
-
 .page {
   font-family: Montserrat, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; }
 
@@ -31,7 +17,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 50px; }
   .page-header__inner {
     display: -webkit-box;
@@ -118,10 +104,10 @@ a {
             order: 1;
     height: 315px;
     width: 220px; }
-    @media (min-width: 768px) {
-      .book-card__img {
-        height: 370px;
-        width: 260px; } }
+  @media (min-width: 768px) {
+    .book-card {
+      height: 370px;
+      width: 260px; } }
   .book-card__descr {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -224,7 +210,7 @@ a {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     overflow-x: auto;
-    background-color: #F2F2F2; }
+    background-color: #f2f2f2; }
   .tabs__link--active {
     border-bottom: 3px solid #ef529f; }
 

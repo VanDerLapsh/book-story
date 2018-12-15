@@ -6,7 +6,7 @@ const bookCardTemplate = {
 
     return`<a href="${book.uri}" class="book-card__link">
           <h2 class="book-card__title">${book.name}</h2>
-          <img class="book-card__img" src="./build/img/${book.uri}.png" alt="picture">
+          <img class="book-card__img" src="img/${book.uri}.png" alt="picture">
           <p class="book-card__descr">${book.desc}</p>
           <div class="book-card__price">${book.price} Р</div></a>`;
 
