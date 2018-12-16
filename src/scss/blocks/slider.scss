@@ -2,35 +2,25 @@
 
   &__item {
     display: flex;
-    // flex-direction: column
-  }
-
-  &__descr-wrap {
-    display: flex;
     flex-direction: column;
   }
 
-  &__item-title {
-    order: 2;
-    border: 8px solid $gray-dark;
-    padding: 30px 10px;
+  &__subtitle {
+
   }
 
-  &__item-descr {
-    order: 1;
-  }
-
-  &__item-more {
-    order: 3;
+  &__descr-wrap {
+    box-sizing: border-box;
     border: 8px solid $gray-dark;
     padding: 30px 10px;
   }
 
   &__item-img {
-    display: none;
+    width: 0;
 
     @media (min-width: $screen-l) {
-      display: block;
+      width: 300px;
+      height: 425px;
     }
   }
 }

@@ -729,41 +729,22 @@ th {
 .slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-
-.slider__descr-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.slider__item-title {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  border: 8px solid #e8e8e8;
-  padding: 30px 10px; }
-
-.slider__item-descr {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1; }
-
-.slider__item-more {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+.slider__descr-wrap {
   border: 8px solid #e8e8e8;
   padding: 30px 10px; }
 
 .slider__item-img {
-  display: none; }
+  width: 0; }
   @media (min-width: 1200px) {
     .slider__item-img {
-      display: block; } }
+      width: 300px;
+      height: 425px; } }
 
 .new__catalog {
   display: -webkit-box;
