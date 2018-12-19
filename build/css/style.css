@@ -568,7 +568,7 @@ th {
       opacity: 0.75; }
 
 .page {
-  font-family: Montserrat, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .page-header {
   display: -webkit-box;
@@ -589,7 +589,10 @@ th {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 83%; }
+    width: 83.3vw; }
+    @media (min-width: 768px) {
+      .page-header__inner {
+        width: 94.4vw; } }
   .page-header__icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -678,7 +681,8 @@ th {
             order: 4; }
 
 .promo {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  padding-bottom: 40px; }
   .promo__inner {
     width: 83%;
     margin: 0 auto; }
@@ -726,25 +730,26 @@ th {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
 
-.slider__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.slider__descr-wrap {
-  border: 8px solid #e8e8e8;
-  padding: 30px 10px; }
-
-.slider__item-img {
-  width: 0; }
-  @media (min-width: 1200px) {
-    .slider__item-img {
-      width: 300px;
-      height: 425px; } }
+.slider {
+  color: #000000; }
+  .slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .slider__subtitle {
+    font-style: italic;
+    font-size: 14px; }
+  .slider__descr-wrap {
+    border: 8px solid #e8e8e8;
+    padding: 30px 10px; }
+  .slider__item-link {
+    display: none; }
+    @media (min-width: 1200px) {
+      .slider__item-link {
+        display: block; } }
+  .slider__item-img {
+    width: 300px;
+    height: 425px; }
 
 .new__catalog {
   display: -webkit-box;
@@ -774,18 +779,23 @@ th {
       display: flex; } }
 
 .tabs {
-  width: 100%; }
+  width: 100%;
+  height: 50px;
+  padding-bottom: 40px; }
   .tabs__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     overflow-x: auto;
-    background-color: #f2f2f2; }
+    background-color: #e8e8e8;
+    height: 50px; }
+  .tabs__item {
+    margin-left: 30px;
+    padding-top: 25px; }
+  .tabs__link:hover {
+    border-bottom: 3px solid #ef529f; }
   .tabs__link--active {
     border-bottom: 3px solid #ef529f; }
 

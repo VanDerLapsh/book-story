@@ -58,6 +58,15 @@ function copyFonts (){
 
 exports.copyFonts = copyFonts;
 
+function copyVendorsJs (){
+  return src([
+    './node_modules/picturefill/dist/picturefill.min.js',
+    ])
+    .pipe(dest(`${dir.build}js/`));
+}
+
+exports.copyVendorsJs = copyVendorsJs;
+
 function javascript() {
   return src(`${dir.src}js/script.js`)
     .pipe(plumber())
@@ -122,6 +131,6 @@ function serve() {
 
 exports.default = series(
   clean,
-  parallel(styles,copyHTML,copyIMG,copyFonts,javascript),
+  parallel(styles,copyHTML,copyIMG,copyVendorsJs,copyFonts,javascript),
   serve
 );

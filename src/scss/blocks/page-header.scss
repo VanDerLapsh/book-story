@@ -8,7 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 83%;
+    width: 83.3vw;
+
+    @media (min-width: $screen-m) {
+      width: 94.4vw;
+    }
   }
 
   &__icons {
