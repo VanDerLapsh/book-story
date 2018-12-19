@@ -1,9 +1,10 @@
 .book-card {
   display: flex;
-  width: 220px;
+  height: 500px;
+  width: 260px;
 
   @media (min-width: $screen-m) {
-    width: 260px;
+    height: 550px;
   }
 
   &__link {
@@ -14,12 +15,14 @@
 
   &__title {
     order: 2;
+    font-size: 24px;
+    color: $black-color;
   }
 
   &__img {
     order: 1;
-    height: 315px;
-    width: 220px;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: $screen-m) {
@@ -29,9 +32,15 @@
 
   &__descr {
     order: 3;
+    font-size: 16px;
+    font-style: italic;
+    color: $black-color;
   }
 
   &__price {
     order: 4;
+    font-size: 16px;
+    font-weight: 800;
+    color: $black-color;
   }
 }
