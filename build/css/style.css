@@ -757,8 +757,6 @@ th {
   border: 8px solid #e8e8e8;
   padding: 30px 10px; }
 
-<<<<<<< HEAD
-=======
 .slider__title {
   font-size: 24px; }
 
@@ -767,7 +765,6 @@ th {
   color: #292df7;
   font-weight: 400; }
 
->>>>>>> a27a3c451149b4a1b9bb3516a423dba80b755610
 .slider__item-link {
   display: none; }
   @media (min-width: 1200px) {
