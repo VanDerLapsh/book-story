@@ -4,7 +4,7 @@
   align-items: center;
 
   &__inner {
-    // width: 1100px;
+    max-width: 1160px;
   }
 
   &__title {
@@ -24,6 +24,7 @@
     @media (min-width: $screen-m) {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 

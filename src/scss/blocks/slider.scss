@@ -14,8 +14,16 @@
   &__descr-wrap {
     border: 8px solid $gray-dark;
     padding: 30px 10px;
-    // overflow-x: auto;
-    // width: 94vw;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__item-more {
+    font-size: 16px;
+    color: $link-color;
+    font-weight: 400;
   }
 
   &__item-link {

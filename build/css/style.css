@@ -643,10 +643,11 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 220px; }
+  height: 500px;
+  width: 260px; }
   @media (min-width: 768px) {
     .book-card {
-      width: 260px; } }
+      height: 550px; } }
   .book-card__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -660,13 +661,15 @@ th {
   .book-card__title {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; }
+            order: 2;
+    font-size: 24px;
+    color: #000000; }
   .book-card__img {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    height: 315px;
-    width: 220px; }
+    width: 100%;
+    height: auto; }
   @media (min-width: 768px) {
     .book-card {
       height: 370px;
@@ -674,11 +677,17 @@ th {
   .book-card__descr {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
-            order: 3; }
+            order: 3;
+    font-size: 16px;
+    font-style: italic;
+    color: #000000; }
   .book-card__price {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
-            order: 4; }
+            order: 4;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000000; }
 
 .promo {
   background-color: #f5f5f5;
@@ -698,6 +707,8 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .catalog__inner {
+    max-width: 1160px; }
   .catalog__title {
     display: none; }
   .catalog__content {
@@ -722,7 +733,10 @@ th {
             -ms-flex-direction: row;
                 flex-direction: row;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .catalog__pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -743,6 +757,17 @@ th {
   border: 8px solid #e8e8e8;
   padding: 30px 10px; }
 
+<<<<<<< HEAD
+=======
+.slider__title {
+  font-size: 24px; }
+
+.slider__item-more {
+  font-size: 16px;
+  color: #292df7;
+  font-weight: 400; }
+
+>>>>>>> a27a3c451149b4a1b9bb3516a423dba80b755610
 .slider__item-link {
   display: none; }
   @media (min-width: 1200px) {
@@ -796,8 +821,11 @@ th {
   .tabs__item {
     margin-left: 30px;
     padding-top: 25px; }
-  .tabs__link:hover {
-    border-bottom: 3px solid #ef529f; }
+  .tabs__link:after {
+    content: '';
+    height: 3px;
+    width: 20px;
+    background-color: #ef529f; }
   .tabs__link--active {
     border-bottom: 3px solid #ef529f; }
 
