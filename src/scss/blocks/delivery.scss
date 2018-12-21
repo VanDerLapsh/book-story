@@ -2,7 +2,21 @@
 
 
   &__inner {
+    position: relative;
+    box-sizing: border-box;
+    border: 8px solid $gray-dark;
+    padding: 30px 10px;
+    width: 94.4vw;
+    margin: 0 auto;
 
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5%;
+      width: 40%;
+      background-color: #fff;
+    }
   }
 
   &__title {
