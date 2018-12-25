@@ -643,6 +643,7 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 490px;
   width: 260px; }
   .book-card__link {
     display: -webkit-box;
@@ -653,7 +654,10 @@ th {
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; }
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .book-card__title {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -664,8 +668,8 @@ th {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 100%;
-    height: auto; }
+    width: 220px;
+    height: 310px; }
   .book-card__descr {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -677,6 +681,9 @@ th {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     font-size: 16px;
     font-weight: 800;
     color: #000000; }

@@ -1,6 +1,6 @@
 .book-card {
   display: flex;
-  // height: 490px;
+  height: 490px;
   width: 260px;
 
   @media (min-width: $screen-m) {
@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   &__title {
@@ -21,8 +22,8 @@
 
   &__img {
     order: 1;
-    width: 100%;
-    height: auto;
+    width: 220px;
+    height: 310px;
   }
 
   &__descr {
@@ -34,6 +35,7 @@
 
   &__price {
     order: 4;
+    justify-content: flex-end;
     font-size: 16px;
     font-weight: 800;
     color: $black-color;
