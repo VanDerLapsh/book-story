@@ -49,6 +49,7 @@
     "normalize.css": "^8.0.1",
     "normalize.scss": "^0.1.0",
     "picturefill": "^3.0.3",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "svgo": "^1.1.1"
   }
 }

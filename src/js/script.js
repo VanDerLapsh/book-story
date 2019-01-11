@@ -22,7 +22,11 @@ import sendRequest from './modules/sendRequest.js';
 // Подключение слайдера
 
 
-  $('.j-slick').slick();
+$('.j-slick').slick({
+  autoplay: true,
+  prevArrow: '.custom-arrow-prev',
+  nextArrow: '.custom-arrow-next',
+});
 
 
 // объекты для Ajax запроса

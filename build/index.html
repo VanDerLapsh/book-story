@@ -36,12 +36,8 @@
         </ul>
       </nav>
       <div class="page-header__icons">
-        <svg class="page-header__basket"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="20px" height="21px">
-          <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-          d="M17.077,12.588 C17.077,13.367 15.692,14.000 14.884,14.000 L6.461,14.000 C5.654,14.000 5.000,13.367 5.000,12.588 L3.000,5.411 C3.000,5.178 3.072,4.968 3.175,4.775 L2.432,1.999 L-0.000,1.999 L-0.000,-0.001 L4.000,-0.001 L4.000,0.124 L5.038,3.999 L18.538,3.999 C19.345,3.999 20.000,4.631 20.000,5.411 L17.077,12.588 ZM7.500,15.999 C8.881,15.999 10.000,17.119 10.000,18.499 C10.000,19.880 8.881,20.999 7.500,20.999 C6.119,20.999 5.000,19.880 5.000,18.499 C5.000,17.119 6.119,15.999 7.500,15.999 ZM14.500,15.999 C15.880,15.999 17.000,17.119 17.000,18.499 C17.000,19.880 15.880,20.999 14.500,20.999 C13.119,20.999 12.000,19.880 12.000,18.499 C12.000,17.119 13.119,15.999 14.500,15.999 Z"/>
+        <svg width="20" height="21" class="page-header__basket">
+          <use xlink:href="img/sprite.svg#icon_basket">
         </svg>
 
         <svg class="page-header__phone"
@@ -70,8 +66,7 @@
         <div class="slider j-slick">
 
           <article class="slider__item">
-            <p class="slider__subtitle">Новое поступление книги «Симпсоны
-  и их математические секреты»</p>
+            <p class="slider__subtitle">Новое поступление книги «Симпсоны и их математические секреты»</p>
             <div class="slider__descr-wrap">
               <h2 class="slider__title">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</h2>
               <a href="#" class="slider__item-more">Хочу узнать о книге больше</a>
@@ -80,8 +75,7 @@
           </article>
 
           <article class="slider__item">
-            <p class="slider__subtitle">Новое поступление книги «45 татуировок
-менеджера»</p>
+            <p class="slider__subtitle">Новое поступление книги «45 татуировок менеджера»</p>
             <div class="slider__descr-wrap">
               <h2 class="slider__title">Книга про правила российского руководителя</h2>
               <a href="#" class="slider__item-more">Хочу узнать о книге больше</a>
@@ -90,8 +84,7 @@
           </article>
 
           <article class="slider__item">
-            <p class="slider__subtitle">Узнайте как обучить персонал с новой книгой
- «Пятая дисциплина»</p>
+            <p class="slider__subtitle">Узнайте как обучить персонал с новой книгой «Пятая дисциплина»</p>
             <div class="slider__descr-wrap">
               <h2 class="slider__title">Искусство и практика обучающейся организации</h2>
               <a href="#" class="slider__item-more">Хочу узнать о книге больше</a>
@@ -99,6 +92,13 @@
             <a href="#" class="slider__item-link"><img src="img/pyataya-distsiplina.png" alt="" class="slider__item-img"></a>
           </article>
         </div>
+
+        <button class="custom-arrow custom-arrow-prev">
+          prev
+        </button>
+        <button class="custom-arrow custom-arrow-next">
+          next
+        </button>
       </div>
     </div>
   </div>
