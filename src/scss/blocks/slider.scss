@@ -29,7 +29,7 @@
   &__item-link {
     display: none;
 
-    @media (min-width: $screen-l) {
+    @media (min-width: $screen-lg) {
       display: block;
     }
   }

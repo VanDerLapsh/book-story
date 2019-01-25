@@ -9,9 +9,18 @@
     justify-content: space-between;
     align-items: center;
     width: 83.3vw;
+    max-width: 1160px;
 
-    @media (min-width: $screen-m) {
+    @media (min-width: $screen-md) {
       width: 94.4vw;
+    }
+  }
+
+  &__nav {
+    order: 3;
+
+    @media (min-width: $screen-md) {
+      order: 0;
     }
   }
 
@@ -19,35 +28,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60px;
   }
 
-  &__basket {
-    cursor: pointer;
-  }
-
-  &__burger {
-    cursor: pointer;
-
-    @media (min-width: $screen-m) {
-      display: none;
-    }
-  }
+  &__basket {}
 
   &__phone {
     display: none;
-    cursor: pointer;
 
-    @media (min-width: $screen-m) {
+    @media (min-width: $screen-md) {
       display: block;
-    }
-  }
-
-  &__nav {
-    display: none;
-
-    @media (min-width: $screen-m) {
-      display: flex;
+      margin-left: 20px;
     }
   }
 }

@@ -1,0 +1,7 @@
+.logo {
+  margin-right: 115px;
+
+  @media (min-width: $screen-md) {
+    // margin-right: 0px;
+  }
+}

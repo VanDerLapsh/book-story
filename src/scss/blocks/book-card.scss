@@ -1,10 +1,16 @@
 .book-card {
   display: flex;
-  height: 490px;
   width: 260px;
 
-  @media (min-width: $screen-m) {
 
+  @media (min-width: $screen-md) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &__link {

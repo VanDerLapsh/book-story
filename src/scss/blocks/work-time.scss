@@ -1,14 +1,14 @@
 .work-time {
 
-  &__header {
-    display: none;
+  display: none;
 
-    @media (min-width: $screen-m) {
-      display: block;
-    }
+  @media (min-width: $screen-md) {
+    display: block;
   }
 
-  &__footer {
-
+  &--footer {
+    display: block;
   }
 }
+
+

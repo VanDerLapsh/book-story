@@ -8,7 +8,7 @@
   &__nav {
     display: none;
 
-    @media (min-width: $screen-m) {
+    @media (min-width: $screen-md) {
       display: flex;
     }
   }

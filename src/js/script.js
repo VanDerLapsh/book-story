@@ -24,8 +24,8 @@ import sendRequest from './modules/sendRequest.js';
 
 $('.j-slick').slick({
   autoplay: true,
-  prevArrow: '.custom-arrow-prev',
-  nextArrow: '.custom-arrow-next',
+  prevArrow: '.custom-arrow--prev',
+  nextArrow: '.custom-arrow--next',
 });
 
 

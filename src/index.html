@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru" class="no-js  page">
 <head>
-  <script src="picturefill.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Документ</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,400i,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 <!--   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"> -->
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="picturefill.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody()</script>
 </head>
-<body class="content">
+<body>
 
   <header class="page-header">
     <div class="page-header__inner">
       <a href="#" class="logo"><img src="img/logo.jpg" alt="book store"></a>
-      <span class="work-time work-time__header">с 9:00 до 19:00</span>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle">Главное меню</button>
+      <span class="work-time">с 9:00 до 19:00</span>
+      <nav class="page-header__nav  main-nav">
+        <button class="main-nav__toggle">=</button>
         <ul class="main-nav__list">
           <li class="main_nav__item">
             <a href="index.html" class="main-nav__link">Книги</a>
@@ -36,25 +35,19 @@
         </ul>
       </nav>
       <div class="page-header__icons">
-        <svg width="20" height="21" class="page-header__basket">
-          <use xlink:href="img/sprite.svg#icon_basket">
-        </svg>
+        <a href="#" class="page-header__basket">
+          <svg width="20" height="21">
+            <use xlink:href="img/sprite.svg#icon_basket"></use>
+          </svg>
+        </a>
 
-        <svg class="page-header__phone"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="16px" height="16px">
-          <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-          d="M4.842,1.274 L3.936,0.326 C3.936,0.326 2.817,-0.421 2.124,0.326 C1.431,1.072 0.311,2.222 0.311,2.222 C0.311,2.222 -0.815,3.063 1.218,6.014 C3.250,8.967 9.373,15.496 9.373,15.496 C9.373,15.496 10.668,16.657 12.998,15.496 C15.328,14.335 15.717,13.600 15.717,13.600 C15.717,13.600 16.336,12.636 15.717,11.703 C14.749,10.246 13.904,9.807 13.904,9.807 C13.904,9.807 12.418,9.351 11.186,10.755 C9.324,12.877 4.842,6.963 4.842,6.963 C4.842,6.963 4.261,5.843 4.842,5.066 C6.017,3.497 6.804,3.717 5.749,2.222 C5.051,1.235 4.842,1.274 4.842,1.274 Z"/>
-        </svg>
+        <a href="#" class="page-header__phone">
+          <svg width="21" height="19">
+            <use xlink:href="img/sprite.svg#icon_phone"></use>
+          </svg>
+        </a>
 
-        <svg class="page-header__burger"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="20px" height="14px">
-          <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-          d="M19.000,8.000 L1.000,8.000 C0.448,8.000 -0.000,7.552 -0.000,7.000 C-0.000,6.448 0.448,6.000 1.000,6.000 L19.000,6.000 C19.552,6.000 20.000,6.448 20.000,7.000 C20.000,7.552 19.552,8.000 19.000,8.000 ZM19.000,2.000 L1.000,2.000 C0.448,2.000 -0.000,1.552 -0.000,1.000 C-0.000,0.448 0.448,-0.000 1.000,-0.000 L19.000,-0.000 C19.552,-0.000 20.000,0.448 20.000,1.000 C20.000,1.552 19.552,2.000 19.000,2.000 ZM1.000,12.000 L19.000,12.000 C19.552,12.000 20.000,12.447 20.000,13.000 C20.000,13.552 19.552,14.000 19.000,14.000 L1.000,14.000 C0.448,14.000 -0.000,13.552 -0.000,13.000 C-0.000,12.447 0.448,12.000 1.000,12.000 Z"/>
-        </svg>
+
       </div>
     </div>
   </header>
@@ -93,42 +86,20 @@
           </article>
         </div>
 
-        <button class="custom-arrow custom-arrow-prev">
+        <button class="custom-arrow custom-arrow--prev">
           prev
         </button>
-        <button class="custom-arrow custom-arrow-next">
+        <button class="custom-arrow custom-arrow--next">
           next
         </button>
       </div>
     </div>
   </div>
 
-<!--   <section class="catalog">
-    <h1 class="catalog__title">Каталог</h1>
-    <div class="catalog__tabs-wrap">
-      <ul class="catalog__tabs">
-        <li class="catalog__tab-item">
-          <a href="#" data-type="all" class="catalog__tab-link catalog__tab-link--active">Все</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a href="#" data-type="science" class="catalog__tab-link">Научпоп</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a href="#" data-type="business" class="catalog__tab-link">Бизнес</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a href="#" data-type="creativity" class="catalog__tab-link">Творчество</a>
-        </li>
-      </ul>
-    </div> -->
-
-
   <section class="catalog">
+
     <div class="tabs">
-      <ul class="tabs__inner">
+      <ul class="tabs__list">
         <li class="tabs__item"><a href="#" data-type="all" class="tabs__link tabs__link--active">Все</a>
         </li>
         <li class="tabs__item">
@@ -154,16 +125,16 @@
       </div>
 
       <ul class="catalog__pagination number">
-        <li class="catalog__number-list"><button class="catalog__number-btn">1</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">2</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">3</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">4</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">5</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">6</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">7</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">8</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">9</button></li>
-        <li class="catalog__number-list"><button class="catalog__number-btn">10</button></li>
+        <li class="number__list"><button class="number__btn">1</button></li>
+        <li class="number__list"><button class="number__btn">2</button></li>
+        <li class="number__list"><button class="number__btn">3</button></li>
+        <li class="number__list"><button class="number__btn">4</button></li>
+        <li class="number__list"><button class="number__btn">5</button></li>
+        <li class="number__list"><button class="number__btn">6</button></li>
+        <li class="number__list"><button class="number__btn">7</button></li>
+        <li class="number__list"><button class="number__btn">8</button></li>
+        <li class="number__list"><button class="number__btn">9</button></li>
+        <li class="number__list"><button class="number__btn">10</button></li>
       </ul>
     </div>
   </section>
@@ -182,12 +153,12 @@
           <svg width="48" height="48">
             <use xlink:href="img/sprite.svg#icon_box"></use>
           </svg>
-        <p class="delivery__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p></li>
+          <p class="delivery__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p></li>
         <li class="delivery__item">
           <svg width="48" height="48">
             <use xlink:href="img/sprite.svg#icon_delivery"></use>
           </svg>
-        <p class="delivery__item-text">Бесплатно доставляем заказы от 3 000 по всей России.</p></li>
+          <p class="delivery__item-text">Бесплатно доставляем заказы от 3 000 по всей России.</p></li>
         <li class="delivery__item">
           <svg width="48" height="48">
             <use xlink:href="img/sprite.svg#icon_map"></use>
@@ -200,12 +171,14 @@
 
   <section class="new">
     <div class="new__inner">
-      <h2 class="new__title">Наши новинки</h2>
-      <a href="#" class="new__link">Все новинки</a>
+      <div class="new__header">
+        <h2 class="new__title">Наши новинки</h2>
+        <a href="#" class="new__link">Все новинки</a>
+      </div>
       <div class="new__catalog">
         <article class="book-card">
           <a href="#" class="book-card__link">
-            <h2 class="book-card__title">Латеральная логика</h2>
+            <h3 class="book-card__title">Латеральная логика</h3>
             <img src="img/book-1b.png" alt="picture" class="book-card__img">
             <p class="book-card__descr">Головоломный путь к нестандартному мышлению</p>
           </a>
@@ -213,7 +186,7 @@
 
         <article class="book-card">
           <a href="#" class="book-card__link">
-            <h2 class="book-card__title">Путеводитель по лжи</h2>
+            <h3 class="book-card__title">Путеводитель по лжи</h3>
             <img src="img/book-2b.png" alt="picture" class="book-card__img">
             <p class="book-card__descr">Критическое мышление в эпоху постправды</p>
           </a>
@@ -221,7 +194,7 @@
 
         <article class="book-card">
           <a href="#" class="book-card__link">
-            <h2 class="book-card__title">Дао физики</h2>
+            <h3 class="book-card__title">Дао физики</h3>
             <img src="img/book-3b.png" alt="picture" class="book-card__img">
             <p class="book-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
           </a>
@@ -242,7 +215,7 @@
   <footer class="page-footer">
     <div class="page-footer__inner">
       <a href="#" class="logo page-footer__logo"><img src="img/logo.jpg" alt="book story"></a>
-      <span class="work-time work-time__footer">с 9:00 до 19:00</span>
+      <span class="work-time work-time--footer">с 9:00 до 19:00</span>
       <nav class="page-footer__nav main-nav">
         <ul class="main-nav__list">
           <li class="main_nav__item">
@@ -258,7 +231,7 @@
       </nav>
     </div>
   </footer>
-  <script type="module" src="js/script.min.js"> </script>
+  <script src="js/script.min.js"></script>
 
 </body>
 </html>

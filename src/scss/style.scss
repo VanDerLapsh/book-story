@@ -1,6 +1,7 @@
+@import 'variables';
+@import 'blocks/fonts.scss';
 @import 'blocks/vanderlapsh_reset';
 @import '../../node_modules/normalize.scss/normalize.scss';
-@import 'variables';
 @import '../../node_modules/slick-carousel/slick/slick.scss';
 @import 'blocks/page';
 @import 'blocks/page-header';
@@ -15,4 +16,4 @@
 @import 'blocks/page-footer';
 @import 'blocks/tabs';
 @import 'blocks/delivery';
-@import 'blocks/custom_arrow.scss';
+@import 'blocks/custom-arrow.scss';

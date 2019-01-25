@@ -1,11 +1,18 @@
 .main-nav {
 
+  &__list {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin-left: 20px;
+  }
 
   &__toggle {
     display: none;
-  }
-
-  &__list {
-    display: flex;
   }
 }

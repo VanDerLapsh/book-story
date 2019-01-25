@@ -19,11 +19,11 @@
       height: 10px;
       background-color: #fff;
 
-      @media (min-width: $screen-m) {
+      @media (min-width: $screen-md) {
         width: 22.3%;
       }
 
-      @media (min-width: $screen-l) {
+      @media (min-width: $screen-lg) {
         width: 32.78%;
       }
     }
@@ -37,11 +37,11 @@
       height: 10px;
       background-color: #fff;
 
-      @media (min-width: $screen-m) {
+      @media (min-width: $screen-md) {
         width: 36.8%;
       }
 
-      @media (min-width: $screen-l) {
+      @media (min-width: $screen-lg) {
         width: 60.65%;
       }
     }
